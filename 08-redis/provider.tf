@@ -8,11 +8,7 @@ terraform {
 
   backend "s3" {
     bucket   = "roboshop-remote-state-saikiran"
-<<<<<<< HEAD
     key = "redis"
-=======
-    key = "vpc"
->>>>>>> d8c1bc48520edb9eb7e8ed3fd3a5cbbdff4892bc
     region = "us-east-1"
     dynamodb_table = "roboshop-locking"
   }
