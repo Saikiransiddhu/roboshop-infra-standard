@@ -5,13 +5,17 @@ pipeline {
         stage('Init') {
             steps {
                 sh'''
-                     terraform init
+                    ls -ltr
+                    pwd
+                    terraform init
                 '''
             }
         }
         stage('plan') {
             steps {
                 sh'''
+                     ls -ltr
+                     pwd
                      terraform plan
                 '''
           
